@@ -281,11 +281,9 @@ var calls = {
     },
     organizations:{ // https://cloudresourcemanager.googleapis.com/v1beta1/organizations
         list: {
-            api: 'cloudresourcemanager',
-            version: 'v1beta1',
-            location: null,
-            parent: 'organization'
-        },
+            url: 'https://cloudresourcemanager.googleapis.com/v1beta1/organizations',
+            pagination: false
+        }
     },
     urlMaps: { // https://compute.googleapis.com/compute/v1/projects/{project}/global/urlMaps
         list: {
