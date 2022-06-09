@@ -187,7 +187,7 @@ describe('networkPolicyEnabled', function () {
             });
         });
 
-        it('should UNKNOWN if unable to query ACK clusters', function (done) {
+        it('shoulds UNKNOWN if unable to query ACK clusters', function (done) {
             const cache = createCache(null, { err: 'error' });
             networkPolicyEnabled.run(cache, {}, (err, results) => {
                 expect(results.length).to.equal(1);
